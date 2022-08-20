@@ -4,7 +4,6 @@ class Tree:
         self.right = None
         self.val = key
 
-
 def searchDLS(root, h, t):
     h -= 1
     if(h == -1):
@@ -27,8 +26,6 @@ def searchDLS(root, h, t):
     else:
         return l
 
-
-
 root = Tree(1)
 root.left = Tree(2)
 root.right = Tree(3)
@@ -40,11 +37,12 @@ root.right.left = Tree(6)
 root.right.right = Tree(7)
 
 h = 2
-target = 1
+target = int(input("Enter target element : "))
 
 x = searchDLS(root, h, target)
 
 if(x == 0):
     x = -1
-
-print(x)
+    print("Target element not found")
+else:
+    print("Target element found :", target)
