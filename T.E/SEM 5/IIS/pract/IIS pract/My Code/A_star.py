@@ -36,12 +36,11 @@ huristic_value = {
 
 path_found = []
 
-a_star(graph, huristic_value, 'S', 'D')
+a_star(graph, huristic_value, 'S', 'G')
 
-print(path_found)
+print("Path found:", path_found)
 
 '''
-
 Q = S
 
 Q = A, G
@@ -52,4 +51,9 @@ Q = D, G
 
 Q = G
 
+
+TC: O(v+e)
+  : O(b^d)
+
+SC: S(b^d)
 '''
