@@ -1,3 +1,7 @@
+# informed
+# A*
+
+
 def a_star(graph, huristic_value, start, end):
     queue = []
     queue.append(start)

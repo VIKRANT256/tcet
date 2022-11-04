@@ -1,5 +1,4 @@
-# Adversarial 
-# alpha beta pruning
+
 class Tree:
     def __init__(self, data):
         self.data = data
@@ -43,6 +42,7 @@ tree.right.right.left.left = Tree(14)
 tree.right.right.left.right = Tree(9)
 tree.right.right.right.left = Tree(13)
 tree.right.right.right.right = Tree(16)
+
 
 x = 0
 def a_b(root, h):
